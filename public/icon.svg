@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle border -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.4"/>
+  
+  <!-- Engineering Grid motif -->
+  <path d="M96 256h320M256 96v320" stroke="#1e293b" stroke-width="4" stroke-dasharray="8 8"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#1e293b" stroke-width="3" stroke-dasharray="6 6"/>
+
+  <!-- Autopilot Compass / Structural Crane Apex Symbol -->
+  <g transform="translate(256, 256)">
+    <!-- Radar ring -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#38bdf8" stroke-width="6" stroke-opacity="0.3"/>
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#f59e0b" stroke-width="4" stroke-opacity="0.4"/>
+    
+    <!-- Structural Truss / Triangulation -->
+    <path d="M-64 70 L0 -70 L64 70 Z" fill="none" stroke="url(#amberAccent)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M-40 24 L40 24" stroke="url(#amberAccent)" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Autopilot Autonomous Core Pulse -->
+    <circle cx="0" cy="-70" r="14" fill="#38bdf8"/>
+    <circle cx="-64" cy="70" r="12" fill="#f59e0b"/>
+    <circle cx="64" cy="70" r="12" fill="#f59e0b"/>
+    
+    <!-- Central Sensor Indicator -->
+    <circle cx="0" cy="0" r="16" fill="#38bdf8"/>
+    <circle cx="0" cy="0" r="6" fill="#020617"/>
+  </g>
+</svg>
